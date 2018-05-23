@@ -1,11 +1,16 @@
 ﻿{
   "title": "Envoy proxy中文文档",
   "gitbook": ">=3.2.0",
-  "description": "Envoy proxy中文文档",
+  "description": "Envoy proxy中文文档,基于Envoy 1.7最新版",
   "language": "zh-hans",
   "author": "ServiceMesher",
   "extension": null,
   "generator": "site",
+  "links": {
+   "sidebar": {
+   "ServiceMesher主页": "https://servicemesher.github.io"
+    }
+  },
   "plugins": [
     "splitter",
     "-lunr", "-search", "search-plus",
@@ -16,7 +21,9 @@
     "back-to-top-button",
     "github-buttons@2.1.0",
     "-highlight", "prism", "prism-themes",
-    "favicon@^0.0.2"
+    "favicon@^0.0.2",
+    "tbfed-pagefooter@^0.0.1",
+    "3-ba"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -39,6 +46,14 @@
         "css": [
         "prism-themes/themes/prism-ghcolors.css"
         ]
+    },
+    "3-ba": {
+        "token": "11f7d254cfa4e0ca44b175c66d379ecc"
+     },
+    "tbfed-pagefooter": {
+    "copyright": "Copyright © ServiceMesher 2018",
+    "modify_label": " 最后更新于 ",
+    "modify_format": "YYYY-MM-DD HH:mm:ss"
     }
   }
 }
